@@ -2,10 +2,14 @@ import React from 'react';
 
 import { Content } from './styles';
 
-const Header = () => (
+interface IProps {
+  text: string | number;
+}
+
+const Header = ({text}: IProps) => (
   <Content>
-    Hello
+    {text}
   </Content>
 )
 
-export default Header
+export default Header;
