@@ -2,10 +2,18 @@ import React from 'react';
 
 import * as Components from '../../components';
 
+import { 
+  TOP_MENU,
+  BOTTOM_MENU
+ } from './mock';
+
 const Demo = () => (
   <>
-  {/* <Components.Header text= "hello" /> */}
-  <Components.Bell />
+  <Components.Header 
+    topMenu= {TOP_MENU}
+    bottomMenu= {BOTTOM_MENU}
+  />
+  {/* <Components.Bell /> */}
   </>
 )
 
