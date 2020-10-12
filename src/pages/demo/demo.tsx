@@ -13,7 +13,7 @@ const Demo = () => (
     topMenu= {TOP_MENU}
     bottomMenu= {BOTTOM_MENU}
   />
-  {/* <Components.Bell /> */}
+  <Components.Navbar />
   </>
 )
 

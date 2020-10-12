@@ -14,7 +14,7 @@ export const Menu = styled.ul<{ Background?: "white" | "gray" }>`
   padding: 0;
 
   ${({ Background = "white" }) =>
-    Background == "white"
+    Background === "white"
       ? css`
           background-color: white;
         `
