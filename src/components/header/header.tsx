@@ -1,14 +1,42 @@
 import React from 'react';
 
-import { Content } from './styles';
+import { Content, Menu, LinkContent, Link, Conteiner, Icon, Search, SearchIcon, SearchInput } from './styles';
+import { Bell } from '../index';
 
-interface IProps {
-  text: string | number;
+interface IMenu {
+  link: string;
+  title: string;
 }
 
-const Header = ({text}: IProps) => (
+interface IProps {
+  topMenu: IMenu[];
+  bottomMenu: IMenu[];
+}
+
+const Header = ({ topMenu, bottomMenu }: IProps) => (
   <Content>
-    {text}
+    <Menu Background='gray'>
+      {topMenu.map(item => (
+        <LinkContent>
+          <Link href={item.link}>{item.title}</Link>
+        </LinkContent>
+      ))}
+    </Menu>
+    <Conteiner>
+      <Icon src='./main-menu.svg' alt='' />
+      <Search>
+        <SearchIcon href='#' target="_blank"></SearchIcon>
+        <SearchInput type='text' />
+      </Search>
+      <Bell />
+    </Conteiner>
+    <Menu>
+      {bottomMenu.map(item => (
+        <LinkContent>
+          <Link href={item.link} size={true} >{item.title}</Link>
+        </LinkContent>
+      ))}
+    </Menu>
   </Content>
 )
 
