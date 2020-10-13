@@ -14,6 +14,11 @@ const Demo = () => (
     bottomMenu= {BOTTOM_MENU}
   />
   <Components.Navbar />
+  <Components.Bonuses 
+    title= 'Получайте бонусы и подарки'
+    text= 'Каждый месяц разыгрываем 10 000 рублей для наших клиентов'
+    img= './messege.svg'
+  />
   </>
 )
 
