@@ -19,6 +19,10 @@ const Demo = () => (
     text= 'Каждый месяц разыгрываем 10 000 рублей для наших клиентов'
     img= './messege.svg'
   />
+  <Components.Icon 
+    link= '#'
+    icon= './youtube.svg'
+  />
   </>
 )
 
