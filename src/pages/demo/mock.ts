@@ -47,3 +47,30 @@ export const BOTTOM_MENU = [
     title: "Мебель",
   },
 ]
+
+export const FOOTER_MENU = [
+  {
+    title: 'Насадки',
+    link: '#'
+  },
+  {
+    title: 'Инструменты',
+    link: '#'
+  },
+  {
+    title: 'Гель-лаки',
+    link: '#'
+  },
+  {
+    title: 'Дизайн',
+    link: '#'
+  },
+  {
+    title: 'Наращивание',
+    link: '#'
+  },
+  {
+    title: 'Оборудование',
+    link: '#'
+  },
+]
