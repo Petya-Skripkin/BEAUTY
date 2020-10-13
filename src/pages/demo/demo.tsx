@@ -4,7 +4,8 @@ import * as Components from '../../components';
 
 import { 
   TOP_MENU,
-  BOTTOM_MENU
+  BOTTOM_MENU,
+  FOOTER_MENU,
  } from './mock';
 
 const Demo = () => (
@@ -22,6 +23,10 @@ const Demo = () => (
   <Components.Icon 
     link= '#'
     icon= './youtube.svg'
+  />
+  <Components.Category 
+    title= 'Популярные категории'
+    menu= {FOOTER_MENU}
   />
   </>
 )
