@@ -28,6 +28,12 @@ const Demo = () => (
     title= 'Популярные категории'
     menu= {FOOTER_MENU}
   />
+  <Components.Navbar /> 
+  <Components.Panel 
+  image='./cheir.svg'
+  text='Парикмахерское кресло «Норм» гидравлическое'
+  price='9 900 ₽'
+  /> 
   </>
 )
 
